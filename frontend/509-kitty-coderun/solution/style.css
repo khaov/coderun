@@ -1,0 +1,61 @@
+:root {
+  --violet: #B6A4FF;
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    background-color: var(--white);
+}
+
+.logo__container {
+    position: relative;
+    width: 512px;
+    height: 512px;
+    background-color: var(--violet);
+    border-radius: 50%;
+}
+
+.logo__container * {
+    position: absolute;
+    transform: skew(-20deg);
+    background-color: var(--black);
+}
+
+.logo__top {
+    top: 116px;
+    left: 258px;
+
+    width: 97px;
+    height: 48px;
+}
+
+.logo__right {
+    top: 163px;
+    left: 329px;
+
+    width: 97px;
+    height: 89px;
+}
+
+.logo__bottom {
+    top: 348px;
+    left: 173px;
+
+    width: 193px;
+    height: 48px;
+}
+
+
+.logo__left {
+    top: 164px;
+    left: 103px;
+
+    width: 113px;
+    height: 184px;
+}
