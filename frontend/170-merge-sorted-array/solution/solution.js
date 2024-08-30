@@ -10,13 +10,11 @@ module.exports = function merge(nums1, m, nums2, n) {
   // ваш код здесь
 }
 
-
 function merge(nums1, m, nums2, n) {
-  for (let i = 0; i < nums2.length; i++) {
-      nums1.push(nums2[i]);
-  }
-
-  return nums1.filter(num => num !== 0).sort((prev, next) => prev - next);
+  return nums1 = nums1.slice(0, m)
+                      .concat(nums2)
+                      .sort((prev, next) => prev - next)
+                      .forEach((num, i) => nums1[i] = num);
 }
 
 merge([46,55,88,0,0,0,0], 3, [18,29,80,90], 4);
