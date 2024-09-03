@@ -1,0 +1,42 @@
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.blendmodes {
+  position: relative;
+  width: 512px;
+  height: 512px;
+  background-color: var(--color-black);
+}
+
+.square {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.square--small {
+  width: 212px;
+  height: 212px;
+  background-color: var(--color-white);
+  mix-blend-mode: color;
+}
+
+.square--large {
+  width: 300px;
+  height: 300px;
+  border: 44px solid var(--color-white);
+  mix-blend-mode: difference;
+}
+
+.square--rotated {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
