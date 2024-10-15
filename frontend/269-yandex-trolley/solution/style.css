@@ -1,0 +1,155 @@
+:root {
+  --orange: #f45a3b;
+  --red:#ff0000;
+  --white: #ffffff;
+  --gray-light:#d8d8d8;
+  --gray:#999999;
+  --gray-dark:#666666;
+  --black-light:#222222;
+  --black: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.painting {
+  background-color: var(--white);
+  padding: 105px 0 0 245px;
+}
+
+.trolley {
+  position: relative;
+  width: 540px;
+  height: 780px;
+}
+
+.flagpole{
+  margin: 0 0 0 70px;
+}
+
+.flagpole__pipe {
+  position: relative;
+  width: 6px;
+  height: 320px;
+  margin: 0 0 0 65px;
+  background-color: var(--gray);
+  
+}
+
+.flagpole__pipe::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  border: 20px solid transparent;
+  border-right: 65px solid var(--red);
+  transform: translate(-100%, 5px);
+}
+
+.flagpole__stand {
+  height: 40px;
+}
+
+.flagpole__base {
+  height: 55px;
+}
+
+.trolley__roof::before,
+.trolley__roof::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+}
+
+.trolley__roof::before {
+  width: 530px;
+  height: 50px;
+  background-color: var(--gray-light);
+  border-radius: 12% 48% / 100% 100% 0% 0%;
+}
+
+.trolley__roof::after {
+  width: 540px;
+  height: 15px;
+  background-color: var(--red);
+  border-radius: 8px;
+}
+
+.trolley__body {
+  width: 520px;
+  height: 130px;
+  margin: 0 auto;
+  background-color: var(--orange);
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.trolley__base {
+  position: relative;
+
+  width: 490px;
+  height: 110px;
+  margin: 0 auto;
+  background-color: var(--black-light);
+
+}
+
+.trolley__base-tl,
+.trolley__base-tr,
+.trolley__base-bl,
+.trolley__base-br {
+  position: absolute;
+}
+
+.trolley__base-tl {
+  top: 0;
+  left: 0;
+
+  border: 5px solid transparent;
+  border-left: 5px solid var(--white);
+  border-top: 5px solid var(--white);
+}
+
+.trolley__base-tr {
+  top: 0;
+  right: 0;
+
+  border: 5px solid transparent;
+  border-top: 5px solid var(--white);
+  border-right: 5px solid var(--white);
+}
+
+.trolley__base-bl {
+  bottom: 0;
+  left: 0;
+
+  border: 35px solid transparent;
+  border-bottom: 35px solid var(--white);
+  border-left: 35px solid var(--white);
+}
+
+.trolley__base-br {
+  right: 0;
+  bottom: 0;
+
+  border: 35px solid transparent;
+  border-right: 35px solid var(--white);
+  border-bottom: 35px solid var(--white);
+}
+
+.trolley__wheels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px 0 35px;
+  transform: translateY(-70px);
+}
+
+.trolley__wheel {
+  width: 130px;
+  height: 130px;
+  background-color: var(--black);
+  border-radius: 50%;
+}
