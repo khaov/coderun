@@ -1,0 +1,56 @@
+:root {
+    --violet: #B6A4FF;
+    --green: #2AE881;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.circles {
+	position: relative;
+	overflow: hidden;
+	width: 512px;
+	height: 512px;
+	background-color: var(--green);
+}
+
+.circles *{
+	position: absolute;
+	background-color: var(--violet);
+	border-radius: 50%;
+}
+
+.circles__top-left,
+.circles__bottom-right{
+	width: 580px;
+	height: 580px;
+}
+
+.circles__top-right,
+.circles__bottom-left{
+	width: 290px;
+	height: 290px;
+}
+
+.circles__top-left{
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+}
+.circles__top-right{
+	top: 0;
+	right: 0;
+	transform: translate(50%, -50%);
+}
+.circles__bottom-left{
+	bottom: 0;
+	left: 0;
+	transform: translate(-50%, 50%);
+}
+.circles__bottom-right{
+	right: 0;
+	bottom: 0;
+	transform: translate(50%, 50%);
+}
